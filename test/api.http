@@ -1,0 +1,18 @@
+@baseUrl = http://localhost:3000/
+
+{{baseUrl}}
+
+###
+
+POST {{baseUrl}}users HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "raphalfo3",
+    "email": "raphalfo.doe3@gmail.com",
+    "password": "raphalfo"
+}
+
+###
+
+GET {{baseUrl}}users HTTP/1.1
